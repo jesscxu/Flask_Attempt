@@ -9,6 +9,10 @@ def home():
 @app.route('/about')
 def about():
   return render_template('about.html')
+
+@app.route('/dataviz')
+def dataviz():
+  return render_template('dataviz.html')
   
 if __name__ == '__main__':
   app.run(debug=True)
