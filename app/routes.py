@@ -13,6 +13,11 @@ def about():
 @app.route('/dataviz')
 def dataviz():
   return render_template('dataviz.html')
+
+#Sending the us.json file
+@app.route('/glassbeadlabs/')
+def glassbeadlabs():
+    return "<a href=%s>file</a>" % url_for('static', filename='glass-bead-labs.json')
   
 if __name__ == '__main__':
   app.run(debug=True)
